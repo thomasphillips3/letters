@@ -1,0 +1,23 @@
+html, body{
+  height:100%;
+  width:100%;
+}
+.page-container {
+  background-color: rgb(66, 50, 255);
+  margin: 1%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.binding {
+  background-color: rgb(66, 134, 244);
+  height:100%;
+  flex-grow: 1;
+}
+
+.cover {
+  flex-grow: 4;
+  border: 1px black;
+  height: 100%;
+}
