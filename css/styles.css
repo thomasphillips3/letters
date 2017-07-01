@@ -3,21 +3,53 @@ html, body{
   width:100%;
 }
 .page-container {
-  background-color: rgb(66, 50, 255);
   margin: 1%;
-  min-height: 100%;
+  min-height: 75%;
   display: flex;
   flex-direction: row;
 }
 
 .binding {
-  background-color: rgb(66, 134, 244);
-  height:100%;
+  background-color: rgb(66, 50, 255);
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 15%;
+}
+.binding div {
   flex-grow: 1;
+  border: 1px solid black;
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.binding div div {
+  align-items: center;
+  justify-content: center;
+}
+.binding div hr {
+  height: 150px;
+  width: 2px;
 }
 
 .cover {
   flex-grow: 4;
   border: 1px black;
+  height: inherit;
+  color: white;
+  background: repeating-linear-gradient(
+    315deg,
+    orange,
+    white 10px,
+    blue 10px,
+    #465298 20px
+  );
+  padding: 1%;
+}
+.cover div {
   height: 100%;
+  width: 100%;
+  background-color: #F3FFFF;
 }
